@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7f5ef">
+  <title>Workspace — UI Bakery Inventory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body class="app-page">
+  <div class="app-shell">
+    <aside class="app-sidebar" id="appSidebar">
+      <a class="navbar-brand brand-lockup app-brand" href="/"><span class="brand-mark"><i class="bi bi-layers-half"></i></span><span>UI Bakery <small>INVENTORY</small></span></a>
+      <div class="workspace-chip"><span class="workspace-dot"></span> BAKERY WORKSPACE</div>
+      <nav id="appNav" class="app-nav" aria-label="Workspace navigation"></nav>
+      <div class="sidebar-bottom"><div class="help-card"><span class="help-icon"><i class="bi bi-life-preserver"></i></span><strong>Need a hand?</strong><small>Ask your administrator about access or stock records.</small></div><button id="updatePasswordButton" class="signout-button"><i class="bi bi-shield-lock"></i> Change password</button><button id="signOutButton" class="signout-button"><i class="bi bi-box-arrow-left"></i> Sign out</button></div>
+    </aside>
+    <main class="app-main">
+      <header class="app-topbar"><button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open navigation"><i class="bi bi-list"></i></button><div class="topbar-context"><span>UI Bakery</span><i class="bi bi-chevron-right"></i><strong id="topbarSection">Overview</strong></div><div class="topbar-right"><span class="topbar-date" id="topbarDate"></span><span class="topbar-avatar" id="profileInitial">U</span><div class="topbar-user"><strong id="profileName">Staff Member</strong><small id="profileRole">Staff</small></div></div></header>
+      <div class="app-content"><div id="appNotice" class="app-notice" role="status" aria-live="polite"></div><div id="viewRoot"></div></div>
+    </main>
+  </div>
+  <dialog id="passwordDialog" class="password-dialog"><form id="passwordForm"><div class="dialog-top"><div><span class="login-overline">ACCOUNT SECURITY</span><h2>Change password</h2></div><button type="button" class="dialog-close" data-close-password aria-label="Close"><i class="bi bi-x-lg"></i></button></div><p>Choose at least 12 characters. Your current session will stay signed in.</p><div class="form-field"><label for="newPassword">New password</label><input class="field-control" id="newPassword" name="password" type="password" minlength="12" maxlength="128" required autocomplete="new-password"></div><div class="form-field mt-3"><label for="confirmPassword">Confirm new password</label><input class="field-control" id="confirmPassword" type="password" minlength="12" maxlength="128" required autocomplete="new-password"></div><div id="passwordMessage" class="form-message mt-2" role="alert"></div><div class="d-flex justify-content-end gap-2 mt-3"><button type="button" class="form-submit secondary" data-close-password>Cancel</button><button class="form-submit" type="submit">Update password</button></div></form></dialog>
+  <dialog id="waybillDialog" class="password-dialog waybill-dialog">
+    <div class="dialog-top no-print">
+      <div><span class="login-overline">SALES DOCUMENTATION</span><h2>Dispatch Waybill</h2></div>
+      <button type="button" class="dialog-close" data-close-waybill aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div id="printableWaybill" class="mt-2"></div>
+    <div class="d-flex justify-content-end gap-2 mt-3 no-print">
+      <button type="button" class="form-submit secondary" data-close-waybill>Close</button>
+      <button type="button" class="form-submit" id="printWaybillBtn"><i class="bi bi-printer me-1"></i> Print / Save PDF</button>
+    </div>
+  </dialog>
+  <dialog id="editItemDialog" class="password-dialog">
+    <form id="editItemForm">
+      <div class="dialog-top">
+        <div><span class="login-overline" id="editItemOverline">ITEM SETTINGS</span><h2 id="editItemTitle">Edit Item</h2></div>
+        <button type="button" class="dialog-close" data-close-edit aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div id="editItemFields" class="form-grid mt-2"></div>
+      <div class="d-flex justify-content-end gap-2 mt-3">
+        <button type="button" class="form-submit secondary" data-close-edit>Cancel</button>
+        <button class="form-submit" type="submit">Save changes</button>
+      </div>
+    </form>
+  </dialog>
+  <script src="/js/app.js" defer></script>
+</body>
+</html>

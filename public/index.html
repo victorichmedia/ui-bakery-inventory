@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="A clearer view of every ingredient, production batch and loaf sold at UI Bakery.">
+  <title>UI Bakery Inventory — Every loaf accounted for</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body class="landing-page">
+  <nav class="navbar navbar-expand-lg site-nav">
+    <div class="container-xl">
+      <a class="navbar-brand brand-lockup" href="/" aria-label="UI Bakery Inventory home">
+        <span class="brand-mark"><i class="bi bi-layers-half"></i></span>
+        <span>UI Bakery <small>INVENTORY</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-label="Open menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="siteNav">
+        <div class="navbar-nav mx-auto gap-lg-4"><a class="nav-link" href="#workflow">How it works</a><a class="nav-link" href="#modules">What you can track</a><a class="nav-link" href="#roles">For every team</a></div>
+        <div class="d-flex gap-2 align-items-center mt-3 mt-lg-0"><a class="nav-link sign-in-link" href="/login">Staff sign in</a><a class="btn btn-dark rounded-pill px-4" href="/login">Open inventory <i class="bi bi-arrow-up-right ms-1"></i></a></div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-wrap">
+      <div class="container-xl hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> A clearer day at the bakery</div>
+          <h1>Every ingredient.<br>Every loaf.<br><span>Accounted for.</span></h1>
+          <p class="hero-intro">Keep raw materials, production, damage and daily sales in one reliable record. Made around the way UI Bakery works.</p>
+          <div class="hero-actions"><a class="btn btn-dark btn-lg rounded-pill px-4" href="/login">Go to your workspace <i class="bi bi-arrow-right ms-2"></i></a><a class="text-link" href="#workflow">See how it works <i class="bi bi-arrow-down-short"></i></a></div>
+          <div class="hero-proof"><div class="avatar-stack"><span>S</span><span>P</span><span>₦</span><span><i class="bi bi-check-lg"></i></span></div><span>One shared picture across store, production and sales.</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Inventory dashboard preview">
+          <div class="visual-glow"></div>
+          <div class="dashboard-preview">
+            <div class="preview-top"><div><span class="preview-kicker">SAMPLE DAILY VIEW</span><h2>Daily overview</h2></div><span class="live-pill"><i class="bi bi-window"></i> Example data</span></div>
+            <div class="preview-metrics"><div><span>Net production</span><strong>1,246 <small>loaves</small></strong><em class="positive"><i class="bi bi-arrow-up-right"></i> 4 batches</em></div><div><span>Stage damage</span><strong>18 <small>loaves</small></strong><em class="muted">1.4% of output</em></div></div>
+            <div class="preview-stock-head"><div><strong>Finished stock</strong><span>Today so far</span></div><span class="preview-date">19 NOV <i class="bi bi-chevron-down"></i></span></div>
+            <div class="stock-row"><span class="bread-icon"><i class="bi bi-box-seam"></i></span><div class="stock-name"><strong>Small · 500g</strong><span>Opening 120 · produced 420</span></div><div class="stock-count">386 <small>left</small></div></div>
+            <div class="stock-row"><span class="bread-icon warm"><i class="bi bi-box-seam"></i></span><div class="stock-name"><strong>Standard · 1kg</strong><span>Opening 42 · produced 600</span></div><div class="stock-count">214 <small>left</small></div></div>
+            <div class="preview-footer"><span><i class="bi bi-check-circle-fill"></i> All entries saved</span><span>Reconciliation updates as you work</span></div>
+          </div>
+          <div class="floating-note"><span class="note-icon"><i class="bi bi-arrow-repeat"></i></span><span><strong>Closing stock</strong><small>Rolls into tomorrow automatically</small></span></div>
+          <span class="hero-spark spark-one">✳</span><span class="hero-spark spark-two">✦</span>
+        </div>
+      </div>
+      <div class="container-xl hero-bottom"><span>BUILT FOR HOW THE BAKERY RUNS</span><div><span><i class="bi bi-boxes"></i> Store</span><i class="bi bi-arrow-right"></i><span><i class="bi bi-gear-wide-connected"></i> Production</span><i class="bi bi-arrow-right"></i><span><i class="bi bi-truck"></i> Sales</span></div></div>
+    </section>
+
+    <section class="section-space workflow-section" id="workflow">
+      <div class="container-xl">
+        <div class="section-heading text-center"><div class="eyebrow justify-content-center">One connected workflow</div><h2>Follow the loaf from<br><span>store room to customer.</span></h2><p>Each handoff becomes a record. Each record updates the stock picture the whole team can rely on.</p></div>
+        <div class="flow-grid">
+          <article class="flow-card"><div class="flow-number">01</div><div class="flow-icon sage"><i class="bi bi-box-arrow-in-down"></i></div><h3>Issue with a record</h3><p>Log incoming ingredients and issue them to production with a clear quantity, time and responsible staff member.</p><span class="flow-tag">STORE CUSTODY</span></article>
+          <article class="flow-card"><div class="flow-number">02</div><div class="flow-icon peach"><i class="bi bi-activity"></i></div><h3>See real production</h3><p>Calculate expected yield by SKU and record damage at mixing, baking, slicing, packaging or distribution.</p><span class="flow-tag">YIELD + DAMAGE</span></article>
+          <article class="flow-card"><div class="flow-number">03</div><div class="flow-icon blue"><i class="bi bi-arrow-left-right"></i></div><h3>Reconcile every return</h3><p>Track what each representative received, what came back and how many units were actually sold.</p><span class="flow-tag">DISPATCH + RETURNS</span></article>
+          <article class="flow-card"><div class="flow-number">04</div><div class="flow-icon yellow"><i class="bi bi-bar-chart-line"></i></div><h3>Close with confidence</h3><p>Carry closing stock into the next day and review the movement behind every balance.</p><span class="flow-tag">DAILY BALANCE</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="modules-section section-space" id="modules">
+      <div class="container-xl modules-grid">
+        <div class="modules-copy"><div class="eyebrow">Know what changed</div><h2>Clear numbers.<br><span>Clear ownership.</span></h2><p>See where materials went, what each batch produced and why stock moved. The daily picture updates from the entries your team makes.</p><div class="module-points"><div><span><i class="bi bi-check2"></i></span><p><strong>Recipe-aware yield</strong><small>Expected output follows each SKU's standard yield per flour bag.</small></p></div><div><span><i class="bi bi-check2"></i></span><p><strong>Stage-level losses</strong><small>Find out where loaves were damaged, with a reason attached.</small></p></div><div><span><i class="bi bi-check2"></i></span><p><strong>Audit-ready history</strong><small>Critical stock actions keep their staff member and timestamp.</small></p></div></div><a class="btn btn-outline-dark rounded-pill px-4 mt-2" href="/login">Explore the workspace <i class="bi bi-arrow-right ms-2"></i></a></div>
+        <div class="ledger-card"><div class="ledger-header"><div><span class="ledger-label">DAILY RECONCILIATION</span><h3>Standard loaf · 1kg</h3></div><span class="ledger-day">TODAY</span></div><div class="ledger-equation"><div><small>Opening</small><strong>42</strong></div><span>+</span><div><small>Production</small><strong>600</strong></div><span>−</span><div><small>Damage</small><strong>12</strong></div><span>−</span><div><small>Net sales</small><strong>416</strong></div></div><div class="ledger-result"><div><span>Closing stock</span><small>Ready to carry forward</small></div><strong>214 <small>loaves</small></strong></div><div class="ledger-steps"><span><i class="bi bi-check-circle-fill"></i> Dispatches matched to returns</span><span><i class="bi bi-clock-history"></i> Saved at close of day</span></div></div>
+      </div>
+    </section>
+
+    <section class="section-space roles-section" id="roles">
+      <div class="container-xl"><div class="section-heading text-center"><div class="eyebrow justify-content-center">The right tools for each hand</div><h2>One bakery.<br><span>Four clear roles.</span></h2><p>Staff see the work they need to do. Administrators get the full picture.</p></div>
+        <div class="roles-grid"><div class="role-card"><span class="role-icon"><i class="bi bi-box-seam"></i></span><div><strong>Store Officer</strong><small>Receipts · Issues · Reorder alerts</small></div><i class="bi bi-arrow-up-right ms-auto"></i></div><div class="role-card"><span class="role-icon orange"><i class="bi bi-gear"></i></span><div><strong>Production Supervisor</strong><small>Batches · Yield · Stage damage</small></div><i class="bi bi-arrow-up-right ms-auto"></i></div><div class="role-card"><span class="role-icon blue"><i class="bi bi-truck"></i></span><div><strong>Sales Officer</strong><small>Dispatch · Returns · Net sales</small></div><i class="bi bi-arrow-up-right ms-auto"></i></div><div class="role-card"><span class="role-icon purple"><i class="bi bi-clipboard-data"></i></span><div><strong>Administrator</strong><small>Users · SKUs · Reports · Audit</small></div><i class="bi bi-arrow-up-right ms-auto"></i></div></div>
+      </div>
+    </section>
+
+    <section class="closing-cta"><div class="container-xl cta-inner"><div><span class="cta-label">A better end to every shift</span><h2>Make today's stock<br>make sense tomorrow.</h2></div><a class="btn btn-light btn-lg rounded-pill px-4" href="/login">Sign in to UI Bakery <i class="bi bi-arrow-up-right ms-2"></i></a><span class="cta-star">✳</span></div></section>
+  </main>
+  <footer class="site-footer"><div class="container-xl d-flex flex-wrap justify-content-between gap-3"><a class="navbar-brand brand-lockup" href="/"><span class="brand-mark"><i class="bi bi-layers-half"></i></span><span>UI Bakery <small>INVENTORY</small></span></a><span>Inventory made visible, from first issue to final loaf.</span><span>© 2026 UI Bakery Inventory</span></div></footer>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>

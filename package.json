@@ -1,0 +1,22 @@
+{
+  "name": "ui-bakery-inventory",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Role-based inventory and production tracking for UI Bakery",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node database/seed.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "zod": "^4.6.7"
+  }
+}
